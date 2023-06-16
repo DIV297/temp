@@ -10,5 +10,5 @@ app.get('/',(req,res)=>{
     console.log("hello");
     res.send("hello")
 })
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
 connectToMongo
